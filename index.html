@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <picture class="box">
+    <source media="(min-width:700px )" srcset="./images/illustration-box-desktop.svg">
+    <img src="./images/illustration-box-desktop.svg" alt="">
+  </picture>
+<div class="container">
+    <div class="photos">
+      <div class="empty" style="width:30rem;"></div>
+      <picture class="bgPicture">
+        <source media="(max-width:700px)" srcset="./images/illustration-woman-online-mobile.svg">
+        <source media="(min-width:701px)" srcset="./images/illustration-woman-online-desktop.svg">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="bg">
+      </picture>
+      <picture class="bgShadow">
+        <source media="(max-width:700px)" srcset="./images/bg-pattern-mobile.svg">
+        <source media="(min-width:701px)" srcset="./images/bg-pattern-desktop.svg" style="width:1rem;">
+        <img src="./images/bg-pattern-mobile.svg" alt="bg">
+      </picture>
+
+    </div>
+
+   <main>
+      <h1>FAQ</h1>
+      <div class="dropdowns">
+        <div class="drop">
+          <div class="text-title">
+            <h3 class="question1"> How many team members can I invite?</h3>
+            <a href="#"><img src="./images/icon-arrow-down.svg" class="button1" alt=""></a>
+          </div>
+          <p class="desc1">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+        </div>
+        <hr>  <!-- end of the drop  -->
+        <div class="drop">
+          <div class="text-title">
+            <h3 class="question2">   What is the maximum file upload size?</h3>
+            <a href="#"><img src="./images/icon-arrow-down.svg" class="button2" alt=""></a>
+          </div>
+          <p class="desc2"> No more than 2GB. All files in your account must fit your allotted storage space.          </p>
+        </div>
+        <hr>  <!-- end of the drop  -->
+        <div class="drop">
+          <div class="text-title">
+            <h3 class="question3">   How do I reset my password?</h3>
+            <a href="#"><img src="./images/icon-arrow-down.svg" class="button3" alt=""></a>
+          </div>
+          <p class="desc3">  Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+        </div>
+        <hr>  <!-- end of the drop  -->
+        <div class="drop">
+          <div class="text-title">
+            <h3 class="question4">  Can I cancel my subscription?</h3>
+            <a href="#"><img src="./images/icon-arrow-down.svg" class="button4" alt=""></a>
+          </div>
+          <p class="desc4"> Yes! Send us a message and we’ll process your request no questions asked.          </p>
+        </div>
+        <hr>  <!-- end of the drop  -->
+        <div class="drop">
+          <div class="text-title">
+            <h3 class="question5">    Do you provide additional support?</h3>
+            <a href="#"><img src="./images/icon-arrow-down.svg" class="button5" alt=""></a>
+          </div>
+          <p class="desc5">   Chat and email support is available 24/7. Phone lines are open during normal business hours.          </p>
+        </div>
+        <hr>  <!-- end of the drop  -->
+      </div>
+    </main>
+</div>
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script>
+</body>
+</html>

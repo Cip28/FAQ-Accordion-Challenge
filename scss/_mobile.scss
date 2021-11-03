@@ -1,0 +1,93 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+body{
+    font-size:14px;
+    font-family: $font;
+    background: linear-gradient(176deg, $Soft-violet 30%, $Soft-blue 86%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    position:relative;
+    background-color: #fff;
+    margin:10rem 5%;
+    border-radius:15px;
+    z-index:1;
+    box-shadow: 0px 26px 29px -15px rgba(0,0,0,0.3);
+    .bgPicture{
+        position: absolute;
+        left:50%;
+        top:-10%;
+        transform:translate(-50%,-10%);
+
+        width:16rem;
+        height:400px;
+        z-index:999;
+       
+    }
+    .bgShadow{
+        position:absolute;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+
+   main{
+        // .drop{margin-bottom:-10px;padding-bottom:-5px;}
+       padding:8rem 5%;
+       hr{height:0.01rem;}
+       h1{
+        text-align:center;
+        font-size:30px;
+        font-weight:700;
+        color:$Very-dark-desaturated-blue;
+        }
+        p{color:$Dark-grayish-blue;}
+        .text-title{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: center;
+            font-size:13px;
+            .button1,.button2,.button3,.button4,.button5,.button6{    transition: all .4s;}
+           h3{font-weight:400;color:$Very-dark-grayish-blue;transition: all .4s;}
+           h3:hover{color:$Soft-red; cursor:pointer;}
+            img{
+                height:10px;
+                padding-left:12px;
+                cursor:pointer;
+            }
+        }
+        @for $i from 1 through 5{
+        .desc#{$i}{height:0;overflow:hidden;transition: all .4s;}
+        }
+   }
+}
+
+@for $i from 1 through 5{
+    .drop .desc#{$i}.active{
+        height:3rem;
+        transition: all .4s;
+    }
+    .text-title .question#{$i}.active{
+        font-weight:700;
+        transition: all .4s;
+    }
+    .button#{$i}.active{
+        transform: rotate(180deg);
+        transform-origin:center center;
+        transition: all .4s;
+    }
+}
+
+
+// @for $i from 1 through 5{
+//     .question#{$i}:hover{
+//         background-color:$Soft-red;
+//         cursor:pointer;
+//     }
+// }
